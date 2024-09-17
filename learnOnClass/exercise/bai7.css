@@ -17,32 +17,32 @@
     background-color: rgb(233, 237, 244);
     height: 82px;
     width: 100%;
-  
+    display: flex;
    
 }
 .main{
     display: flex;
-    height: 1000px;
+    height: 920px;
     width: 100%;
     background-color: rgb(220, 220, 220);
 }
 .left{
     margin-right: 10px;
     overflow: hidden;
-    height: 1000px;
+    height: 900px;
     width: 85%;
     background-color: rgb(220, 220, 220);
 }
 .right{
 
-    height: 1000px;
+    height: 900px;
     width: 15%;
     background-color: rgb(220, 220, 220);
    
 }
 
 .title1{
-    background-color: rgba(13, 110,253, 1);
+    background-color: rgba(45, 163,231);
     /* display: flex; */
     height: 40px;
     width: 100%;
@@ -79,33 +79,46 @@
 .notification{
     margin-top: 10px;
     
-    height: 500px;
+    height: 440px;
     width: 100%;
     background-color: rgb(236, 233, 245);
 }
 
 .login{
-    display: flex;
-    height: 240px;
+    overflow: hidden;
+    height: 230px;
     width: 100%;
     background-color: rgb(246, 246, 246);
+    padding-bottom: 10px;
 }
 .qr{
     overflow: hidden;
     margin-top: 10px;
-    height: 490px;
+    height: 522px;
     width: 100%;
-    background-color: rgb(231, 19, 22);
+    background-color: white;
 }
 .tutorial{
     margin-top: 10px;
-    display: flex;
+    
     height: 150px;
     width: 100%;
-    background-color: rgb(19, 231, 188);
+    background-color: white;
+}
+.text_tutorial{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 20px;
+    width: 99%;
+    background-color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
 }
 .main_noti{
     display: flex;
+    overflow: hidden;
+    height: 400px;
 }
 .left_noti{
     padding-left: 10px ;
@@ -127,11 +140,46 @@
     width: 67%;
     background-color: white;
 }
-
-
-.credit{
+.day{
+    font-style: italic;
+    font-size: 15px;
+}
+.info{
+    
+    height: 30px;
+    width: 100%;
+    background-color:rgb(232,240,254);
+}
+.submit{
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    height:40px;
+    width: 100%;
+    background-color: rgb(56, 168, 232);
+    font-size: 18px;
+    color: white;
+}
+.submit1{
+    justify-content: center;
+    
+    border-radius: 5px;
     display: flex;
     height: 50px;
     width: 100%;
-    background-color: rgb(37, 19, 19);
+    background-color: rgb(0, 120, 211);
+    font-size: 18px;
+    color: white;
+}
+.father_submit{
+    padding:5px ;
+}
+.credit{
+    display: flex;
+    height: 55px;
+    width: 100%;
+    background-color:  rgba(45, 163,231);
+    justify-content: center;
 }   
