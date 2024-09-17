@@ -1,0 +1,15 @@
+/* body{
+    background: #d46f6f;
+} */
+.parent{
+    width: 600px;
+    height: 600px;
+    background-color: #a5c524dc;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.child{
+    width: 200px;
+    height: 200px;
+}

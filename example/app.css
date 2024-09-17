@@ -1,0 +1,80 @@
+RESET CSS
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 50px;
+    background: #dc9a9a;
+}
+.parent{
+    background: #cf995b;
+
+    /* cách căn giữa theo flexbox */
+    /* display: flex;
+    align-items: center; căn theo chiều dọc
+    justify-content: center;căn theo chiều ngang */
+
+    display: flex;/* CHO CÁC PTU CON LEN CX 1 DÒNG */
+    
+  
+    gap: 20px;  /* khoảng cách giữa các ptu trong parent */
+    align-items: flex-end; /* căn theo chiều dọc ở bên dưới và ngc lại */
+    justify-content: space-between; /* căn theo chiều ngang ở bên phải và ngược lại*/
+    height: 500px;
+    flex-direction: row-reverse; /* đảo chiều theo dòng */
+    flex-direction: column-reverse; /* đảo chiều theo dòng */
+    flex-wrap: wrap;/*auto wrap*/
+
+    /* cách căn giữa theo grid */
+    /* display: grid;
+    place-items: center; */
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: #ad4949;
+    /* border-radius: 50%; bo góc */
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    }
+.child:nth-child(1){
+    height: 120px;
+    flex: 1;
+}
+.child:nth-child(2){
+    height: 140px;
+    width: 200px;
+    /* flex: 1; */
+}
+/* .child:nth-child(3){
+    height: 160px;
+}
+.child:nth-child(4){
+    height: 180px;
+} */
+table{
+    width: 50%;
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    /* cách 1: căn giữa */
+    /* margin: auto; */
+}
+tr,td,th{
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+

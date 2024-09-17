@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <body>
+        <MArQUEE>
+            <img src="Screenshot 2024-08-20 090636.png" width="20px" height="20px">
+        </MArQUEE>
+        <!-- //hình ảnh or chữ ...-->
+
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+        <!--thẻ âm thanh-->
+        <video controls width="400" height="300">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <!--thẻ video-->
+        Thẻ &lt;h1&gt
+        <!--viết kí tự <>-->
+        <h1>FORM</h1>
+        <form>
+            Họ: <input type="text" 
+            name="firstName" 
+            placeholder="Nhập vào thông tin họ">
+
+            <br><br>
+            Năm: <input type="text" value="2024" readonly>
+
+            <br><br>
+            Email:<input type="email" 
+            name="yourEmail" 
+            >
+             <input type="submit" value="Gui">
+
+            <br><br>
+            SĐT:<input type="tel" 
+            name="telephone" 
+            placeholder="1-234-567-8910"
+            >
+
+            <br><br>
+            Lời bài hát: <textarea></textarea>
+
+            <br><br>
+            <input type="radio" name="sex" value="male"> Male<br>
+            <input type="radio" name="sex" value="female"> Female<br>
+            <input type="radio" name="sex" value="unknow"> Unknow
+
+            <br><br>
+            Hobby:<br><br>
+            Game:<input type="checkbox" name="Hobby" value="game"> <br>
+            Music:<input type="checkbox" name="Hobby" value="music"> <br>
+            Sport:<input type="checkbox" name="Hobby" value="sport"> <br>
+            Calisthenic:<input type="checkbox" name="Hobby" value="calisthenic"> <br>
+
+            <br><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Chorm">
+                <option value="Firefox">
+                <option value="Opera">
+            </datalist>
+
+            <br><br>
+            <select name="browsers">
+                <option value="0">Internet Explorer</option>
+                <option value="1">Firefox</option>
+                <option value="2">Chorme</option>
+                <option value="3">Opera</option>
+                <option value="4">Safari</option>
+                <option value="5">CocCoc</option>
+            </select>
+
+            <br><br>
+            <select name="browsers" multiple>
+                <option value="0">Internet Explorer</option>
+                <option value="1">Firefox</option>
+                <option value="2">Chorme</option>
+                <option value="3">Opera</option>
+                <option value="4">Safari</option>
+                <option value="5">CocCoc</option>
+            </select>
+
+            <br><br>
+            0<input type="range" value="50">100 <!--50 la gia tri mac dinh-->
+            
+            <br><br>
+            Quanity(between 1 and 5):
+            <input type="number"
+            min="0"
+            max="5"
+            step="0.2">
+
+            <br>
+            <input type="reset">
+
+        </form>
+        <form oninput="x.value=(parseInt(a.value)+parseInt(b.value))*2">
+            <input type="number" id="a" value="" placeholder="nhập chiều dài">
+            <br><br>
+            <input type="number" id="b" value="" placeholder="nhập chiều rộng">
+            chu vi hcn :
+            <output name="x" for="a b"></output>
+
+            <br><br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/bg6wwEJ-HjA?si=kI9wSR_h_Y3LX-mv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </form>
+
+        <form>
+            <input type="button" value="Click">
+        </form>
+
+
+        &lt;form oninput="x.value=(parseInt(a.value)+parseInt(b.value))*2" &gt
+            <br><br>
+            &lt input type="number" id="a" value="" placeholder="nhập chiều dài" &gt
+            <br><br>
+            &lt input type="number" id="b" value="" placeholder="nhập chiều rộng" &gt
+            <br><br>
+            chu vi hcn :
+            &lt output name="x" for="a b"&gt &lt/output&gt
+
+
+        
+    </body>
+</html>

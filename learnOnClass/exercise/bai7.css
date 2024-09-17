@@ -1,0 +1,137 @@
+.webbar{
+    display: flex;
+    height: 55px;
+    width: 100%;
+    background-color: #54b4eb;
+    
+}
+.icon{
+  
+    display: flex;
+    height: 55px;
+    margin-left: 10px;
+    background-color: #54b4eb;
+    align-items: center;
+}
+.title{
+    background-color: rgb(233, 237, 244);
+    height: 82px;
+    width: 100%;
+  
+   
+}
+.main{
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+}
+.left{
+    margin-right: 10px;
+    overflow: hidden;
+    height: 1000px;
+    width: 85%;
+    background-color: rgb(220, 220, 220);
+}
+.right{
+
+    height: 1000px;
+    width: 15%;
+    background-color: rgb(220, 220, 220);
+   
+}
+
+.title1{
+    background-color: rgba(13, 110,253, 1);
+    /* display: flex; */
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+    display: flex;
+    
+    font-size: 20px;
+   color: white;
+}   
+.father_img{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-color: white;
+}
+.img{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    height: 230px;
+    width: 34%;
+    background-color: rgb(188, 231, 19);
+    
+}
+.img1{
+   margin: 10px;
+    display: flex;
+    height: 230px;
+    width: 34%;
+    /* background-color: rgb(188, 231, 19); */
+}
+.notification{
+    margin-top: 10px;
+    
+    height: 500px;
+    width: 100%;
+    background-color: rgb(236, 233, 245);
+}
+
+.login{
+    display: flex;
+    height: 240px;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+}
+.qr{
+    overflow: hidden;
+    margin-top: 10px;
+    height: 490px;
+    width: 100%;
+    background-color: rgb(231, 19, 22);
+}
+.tutorial{
+    margin-top: 10px;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(19, 231, 188);
+}
+.main_noti{
+    display: flex;
+}
+.left_noti{
+    padding-left: 10px ;
+    
+    height:460px;
+    width: 33%;
+    background-color: white;
+}
+.img_noti{
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+    margin: 10px 10px 10px 0px;
+   
+}
+.right_noti{
+    /* display: flex; */
+    height: 460px;
+    width: 67%;
+    background-color: white;
+}
+
+
+.credit{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(37, 19, 19);
+}   

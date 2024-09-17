@@ -1,0 +1,51 @@
+.main{
+    background-color: white;
+    width: 30%;
+    margin: 50px auto;
+    padding-bottom: 5px;
+}
+
+
+.title{
+    background-color: #1eaab8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+
+.infor{
+    margin-top:  35px;
+    margin-left: 20px;
+}
+.robot{background-color: rgb(223, 220, 225);
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.submit{
+    background-color: red;
+    color: white;
+    width: 30%;
+    height: 40px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+.main{
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.name{
+    margin-top: 10px;
+}
+
+
