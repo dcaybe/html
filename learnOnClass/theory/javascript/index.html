@@ -11,7 +11,47 @@
     </script>
 </head>
 <body>
-    <!-- <script>document.write('hello world 2');</script> -->
-   
+    <!-- <script>document.write("Xin chào "+info.name+" tôi tên là "+info.age+" msv  "+info.id+" tôi thích "+info.hobby+" tôi đang ở "+ info.)</script> -->
+    <!-- // comfim box
+//  cú pháp
+//  var r = comfim("sometext")
+//  ví dụ -->
+
+<!-- <script type="text/javascript">
+    var r = confirm("press a button");
+    if (r== true){
+        document.write("You pressed OK");
+    }
+        else document.write("You pressed Cancel");
+
+</script>
+<script type="text/javascript">
+    var r = confirm("press a button");
+    if (r== true){
+        document.write("You pressed OK");
+    }
+        else document.write("You pressed Cancel"); -->
+        <div>
+            NHập vào số A: <input type="number" id="soA">
+        </div>
+        <div>
+            NHập vào số B: <input type="number" id="soB">
+        </div>
+        <div>
+            <input type="number" id="ketQua" readonly>
+        </div>
+        <div>
+           <button onclick="tinhtoan()">Tính</button>
+        </div>
+        <script>
+            function tinhtoan(){
+                var soA=document.getElementById('soA').value;
+                var soB=document.getElementById('soB').value;
+                var ketQua= parseInt(soA) +  parseInt(soA);
+                document.getElementById('ketQua').value =ketQua;
+            }
+        </script>
+
+</script>
 </body>
 </html>

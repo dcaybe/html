@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai8.css">
+</head>
+<body>
+    <div class="main">
+        <iframe class="clip" width="700" height="400" src="https://www.youtube.com/embed/bg6wwEJ-HjA?si=wIhsxim_aCYlglnC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-m,edia; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+        </iframe></div>
+    <div class="list_video">
+        <div class="video">
+            <div class="main_video"></div>
+            <p>Nhạc Chill TikTok 2024</p>
+           <button onclick="doiVideo(0)" id="1">Xem video</button>
+        </div>
+        <div class="video">
+            <div class="main_video"></div>
+            <p>Dĩ vãng nhạt nhòa</p>
+           <button onclick="doiVideo(1)" id="2">Xem video</button>
+        </div>
+        <div class="video">
+            <div class="main_video"></div>
+            <p>who am i ?</p>
+           <button onclick="doiVideo(2)" id="3">Xem video</button>
+        </div>
+        <div class="video">
+            <div class="main_video"></div>
+            <p>Music for when you are stressed</p>
+           <button onclick="doiVideo(3)" id="4">Xem video</button>
+        </div>
+    </div>
+
+    <script>
+        function doiVideo(e){
+          const listVideo = [
+            "https://www.youtube.com/embed/xwUB8OTW8yA?si=cBJLKAWGcdL28k5_",
+            "https://www.youtube.com/embed/kq5NgU8J-To?si=aOib8v3la196j-F0",
+            "https://www.youtube.com/embed/n24I44Mcy0I?si=TBV_hE7nvS0CSfqW",
+            "https://www.youtube.com/embed/_BtXPQimVhg?si=iaTyukEk_GookYx6"]
+          document.getElementsByClassName('clip')[0].src = listVideo[e]
+        }
+        
+    </script>
+</body>
+</html>

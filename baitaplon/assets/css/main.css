@@ -1,0 +1,152 @@
+.header{
+    
+    position: fixed;
+    top: 0px;
+    right:0px;
+    left:0px;
+    height: 80px;
+    background-color: transparent;
+}
+
+
+.nav{
+    /* font-size:14px; */
+    padding-top: 14.8px ;
+    padding-bottom: 14.8px ;
+    padding-inline-start: 40px;
+    margin-block-start:0;
+    margin-block-end: 0;
+    display: inline-block;
+}
+
+.nav >li{
+    display: inline-block; 
+}
+
+.nav li{
+  
+  position: relative;
+ 
+}
+.right_nav li a,
+.right_nav li ,
+.nav li a{
+    padding: 7.5px 16px;
+    text-align: center;
+    margin-right: 4px;
+    /* font-size: 14px; */
+    line-height: 30px;
+    display: inline-block;
+    text-decoration:none;
+    color: #fff;
+}
+.nav .subnav li:hover a,
+.nav >li:hover >a {
+   border-radius: 10px;
+    background-color: rgba(214, 226, 228, 0.5);
+}
+
+.under_line{
+    top: 0px;
+    height: 4px;
+    background-color: rgb(209, 54, 57);
+    margin-top: 0px;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    left: 0px;
+    padding: 0px;
+    width: 160px;
+    background-color: #111;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+
+.nav .subnav li{
+    left: 0px;
+    padding: 0px;
+    width: 160px;
+    background-color: #111;
+    margin-top: 16px;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav .subnav a{
+    color: #fff;
+    padding: 7.5px 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.nav .subnav li {
+    display:flex ;
+    
+}
+
+.right_nav{
+    display: inline-block;
+   position: fixed;
+    right: 0;
+}
+
+.right_nav li{
+    display: inline-block;
+}
+
+
+
+
+
+.slider{
+    height: 650px;
+    width: 100%;
+    margin-top: 0px;
+    background: linear-gradient(275deg, rgba(10, 10, 10, 0) 0, rgba(10, 10, 10, .8) 120%);
+}
+.img{
+    height: 650px;
+}
+
+.content{
+ background-color: #000;
+ color: #fff;
+ height: 1400px;
+}
+
+.conten_1{
+ height: 1080px;
+ background-color: #0b04cf;
+ padding: 104px 84px 10px 84px;
+}
+
+.slogan h1{
+   font-size: 50px;
+    margin: 0 0 84px 0;
+    
+}
+
+.mainct_1{
+    height: 640px;
+    background-color: #0b04cf;
+}
+
+.left_mainct_1{
+
+}
+
+.left_mainct_1{
+
+}
+.footer{
+
+}
+
+

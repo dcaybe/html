@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js"></script>
+    <style>
+        img {
+            width: 100px;
+        }
+        .fixed {
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <div class="title">
+            Trời sáng
+        </div>
+        <div>
+            <img class="image" src="/img/mattroi.jpg">
+        </div>
+        <div>
+            <button onclick="doiCheDo()">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        var troiSang = true;
+        function doiCheDo(){
+            if(troiSang == true){
+                document.getElementsByClassName("title")[0].innerHTML = "Trời tối";
+                document.getElementsByClassName("title")[0].style = "color: white;";
+                document.getElementsByClassName("image")[0].src = "/img/mattrang.jpg";
+                troiSang = false;
+                document.getElementsByTagName("body")[0].style = "background-color: black;"
+            }
+            else{
+                document.getElementsByClassName("title")[0].innerHTML = "Trời sáng";
+                document.getElementsByClassName("title")[0].style = "color: black;";
+                document.getElementsByClassName("image")[0].src = "/img/mattroi.jpg";
+                troiSang = true;
+                document.getElementsByTagName("body")[0].style = "background-color: white;"
+            }
+        }
+    </script>
+</body>
+</html>

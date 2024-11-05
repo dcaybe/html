@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--1. Tạo 1 ô input nhập số thành viên của lớp 
+        2. Tạo 1 button random khi nhấn vào sẽ Dựa vào mảng và hàm ở dưới, in ra màn hình tên 1 bạn bất kì -->
+    <script>
+        var names = ["Nguyễn Thị Diệu An ", "Phạm Văn An ", "Đỗ Việt Anh ", "Lê Công Thái Anh ", "Nguyễn Bùi Quang Anh ", "Nguyễn Lê Minh Anh ", "Phạm Quốc Bảo ", "Hoàng Thị Tân Bình ", "Nguyễn Đức Chính ", "Bùi Văn Công ", "Vũ Thành Công ", "Nguyễn Minh Cường ", "Phạm Quốc Cường ", "Trần Mạnh Cường ", "Phạm Thu Dung ", "Trần Mạnh Dũng ", "Lê Hoàng Dương ", "Nguyễn Đình Dương ", "Trần Ngọc Đại ", "Trần Mạnh Đạt ", "Đào Bá Đức ", "Đặng Văn Đức ", "Trần Vĩnh Giáp ", "Đặng Cao Hậu ", "Nguyễn Trung Hiếu ", "Trần Mỹ Hoa ", "Lê Văn Hồ ", "Nguyễn Thế Hơn ", "Đoàn Văn Hùng ", "Nguyễn Thị Huyền ", "Nguyễn Văn Kiên ", "Bùi Thế Linh ", "Hồ Văn Luân ", "Dương Đức Mạnh ", "Đậu Bá Mạnh ", "Đặng Văn Minh ", "Nguyễn Quang Minh ", "Vũ Đức Minh ", "Tô Hoàng Nam ", "Vũ Thị Kim Ngân © ", "Nguyễn Khả Nguyên ", "Đinh Duy Nhất ", "Trần Thị Yến Nhi ", "Bùi Đức Nhương ", "Mai Văn Phong ", "Phạm Duy Phong ", "Trần Duy Phong ", "Nguyễn Huy Phúc ", "Nguyễn Như Quỳnh ", "Hoàng Minh Thành ", "Bùi Trung Thông ", "Bùi Việt Tiến ", "Nguyễn Đình Trọng ", "Phạm Xuân Trường ", "Nguyễn Anh Tú ", "Hoàng Công Tuấn ", "Đỗ Mạnh Tường ", "Nguyễn Thái Vinh ", "Nguyễn Thế Vinh ", "Nguyễn Đình Vượng ", "Nguyễn Hà Vy"];
+        /*
+            min: vị trí bắt đầu
+            max: vị trí kết thúc
+        */
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        function randomuser(){
+            var siSo=document.getElementById('siSo');
+            
+        }
+
+    </script>
+    
+    Nhập số thành viên:<input type="number" id="siSo">
+    
+    <button onclick="document.write(names[getRandomInt(0,parent(siSo)-1)])">Random</button>
+    
+</body>
+
+</html>

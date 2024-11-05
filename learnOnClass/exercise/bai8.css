@@ -1,0 +1,36 @@
+.main{
+  margin: auto;
+  height: 400px;
+  width: 650px;
+}
+
+.list_video{
+     margin-top: 10px;
+     display: flex;
+     padding: 0 40px;
+     
+}
+
+.video{
+   text-align: center;
+    color:pink;
+    padding-top: 20px;
+    margin: auto;
+    height: 220px;
+    width: 300px;
+    background-color: #000;
+}
+
+.video p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.main_video{
+    width: 230px;
+    height: 150px;
+    background-color: #fff;
+    margin: auto;
+    
+}
+
