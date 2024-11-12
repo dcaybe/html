@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,10 @@
                 <div><a href="">Duyệt tìm theo ngôn ngữ</a></div>
            </div>
             <div class="right_nav">
+                
+                <div><button onclick="light_mode()"><i class="ti-light-bulb">
+                   
+                </i></button></div>
                 <div><i class="ti-search"></i></div>
                 <div><i class="ti-bell"></i></div>
                 <div><a href=""><img src="./img/netflix/avt.png"  height="40px" width="40px" > <i class="ti-angle-down"></i></a></div>
@@ -30,34 +35,38 @@
         </div>
     </div>
     <div class="slider">
-        <img class="img" src="./img/netflix/slider.jpg" >
+      <button id="btn" onclick="doiVideo(0)"> 
+         <img class="img" src="./img/netflix/slider.jpg" >
+       
+    </button>
+    
     </div>
     <div class="main">
         <p style="font-size:18px;">Đề cử</p>
         <div class="list">
             <div class="content">
-                <img class="img_content" src="./img/netflix/blackmyt.jpg" >
+               <button onclick="doiVideo(1)"> <img class="img_content" src="./img/netflix/blackmyt.jpg" ></button>
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/phined.jpg" >
+               <button onclick="doiVideo(2)"> <img class="img_content" src="./img/netflix/phined.jpg" ></button>
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/train.jpg">
+             <button onclick="doiVideo(3)">   <img class="img_content" src="./img/netflix/train.jpg"></button>
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/luffy.jpg">
+             <button onclick="doiVideo(4)">   <img class="img_content" src="./img/netflix/luffy.jpg"></button>
     
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/power.jpg">
+             <button onclick="doiVideo(5)">   <img class="img_content" src="./img/netflix/power.jpg"></button>
     
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/twcher.png">
+             <button onclick="doiVideo(6)">   <img class="img_content" src="./img/netflix/twcher.png"></button>
                 
             </div>
             <div class="content">
-                <img class="img_content" src="./img/netflix/tet.jpg">
+             <button onclick="doiVideo(7)">   <img class="img_content" src="./img/netflix/tet.jpg"></button>
     
             </div>
         </div>
@@ -102,9 +111,67 @@
                 </table>
                 <input type="button" value="Mã dịch vụ">
                 <p>@1997 - 2004 Netflix</p>
+                <button onclick="doiVideo(0)">fdfdf</button>
             </div>
         </div>
     </div>
-    <table></table>
+    <script>
+         var Sang = false;
+        function light_mode(){
+           
+            if(Sang == false){
+                document.getElementsByClassName("footer")[0].style = "background-color: white ; "
+                document.getElementsByClassName("main_footer")[0].style = "background-color: white ; "
+                document.getElementsByClassName("content")[0].style = "background-color: white ; "
+                document.getElementsByClassName("ti-facebook")[0].style = "color: black ; "
+                document.getElementsByClassName("ti-instagram")[0].style = "color: black ; "
+                document.getElementsByClassName("ti-twitter")[0].style = "color: black ; "
+                document.getElementsByClassName("ti-youtube")[0].style = "color: black ; "
+                document.getElementsByClassName("ti-light-bulb")[0].style = "color: black ; "
+               
+                
+                Sang = true;
+                document.getElementsByTagName("body")[0].style = "background-color: white;"
+                document.getElementsByTagName("html")[0].style = "background-color: white;"
+            }
+            else{
+                 document.getElementsByClassName("footer")[0].style = "background-color: black ; "
+                document.getElementsByClassName("footer").style = "background-color: black"
+                Sang = false;
+                document.getElementsByTagName("body")[0].style = "background-color: black;"
+                document.getElementsByClassName("content")[0].style = "background-color: black ; "
+                document.getElementsByTagName("body")[0].style = "background-color: black;"
+                document.getElementsByTagName("html")[0].style = "background-color: black;"
+
+                document.getElementsByClassName("main_footer")[0].style = "background-color: black ; "
+                document.getElementsByClassName("ti-facebook")[0].style = "color: white ; "
+                document.getElementsByClassName("ti-instagram")[0].style = "color: white ; "
+                document.getElementsByClassName("ti-twitter")[0].style = "color: white ; "
+                document.getElementsByClassName("ti-youtube")[0].style = "color: white ; "
+                document.getElementsByClassName("ti-light-bulb")[0].style = "color:0 ; "
+
+
+            }
+         
+        }
+       
+    </script>
+    <script>
+         function doiVideo(e){
+          var listVideo = [`
+          <iframe id="btn" width="100%" height="500px" src="https://www.youtube.com/embed/C2V38ghWHlQ?si=743mgSuViZqeoQ6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,`
+          <iframe id="btn" width="100%" height="500" src="https://www.youtube.com/embed/u83VdXAVq08?si=k9HCJxBKC9p1vC8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+          `<iframe id="btn" width="100%" height="500" src="https://www.youtube.com/embed/jcqziqIcJ_g?si=joN3wRQTzCkEi6c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+          `<iframe id="btn" width="100%" height="500" src="https://www.youtube.com/embed/1ovgxN2VWNc?si=eRLO4gZIna4htb8q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        `<iframe id="btn" width="100%" height="500" src="https://www.youtube.com/embed/fC5MKJDW6sc?si=Z6tcryE_0L-rOEZV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        `<iframe id="btn" width="100%" height="500px" src="https://www.youtube.com/embed/Ysa6F0g8dJ0?si=7saVZDUg3vLufCNu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        `<iframe id="btn" width="100%" height="500" src="https://www.youtube.com/embed/SzS8Ao0H6Co?si=WiSg8ytzlZ30cld0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,` <iframe id="btn" width="100%%" height="500px" src="https://www.youtube.com/embed/C2V38ghWHlQ?si=743mgSuViZqeoQ6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`]
+         
+          document.getElementById("btn").outerHTML  = listVideo[e] // phải dùng id mới dùng được outer
+        }
+    </script>
+    
 </body>
 </html>
+
+

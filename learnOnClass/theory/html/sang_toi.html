@@ -25,6 +25,8 @@
         </div>
         <div>
             <button onclick="doiCheDo()">Đổi chế độ</button>
+            <button onclick="doiVideo()">Đổi video</button>
+
         </div>
     </div>
     <script>
@@ -38,12 +40,20 @@
                 document.getElementsByTagName("body")[0].style = "background-color: black;"
             }
             else{
-                document.getElementsByClassName("title")[0].innerHTML = "Trời sáng";
                 document.getElementsByClassName("title")[0].style = "color: black;";
                 document.getElementsByClassName("image")[0].src = "/img/mattroi.jpg";
                 troiSang = true;
                 document.getElementsByTagName("body")[0].style = "background-color: white;"
             }
+        }
+
+        function doiVideo(e){
+          const listVideo = [
+            "https://www.youtube.com/embed/xwUB8OTW8yA?si=cBJLKAWGcdL28k5_",
+            "https://www.youtube.com/embed/kq5NgU8J-To?si=aOib8v3la196j-F0",
+            "https://www.youtube.com/embed/n24I44Mcy0I?si=TBV_hE7nvS0CSfqW",
+            "https://www.youtube.com/embed/_BtXPQimVhg?si=iaTyukEk_GookYx6"]
+          document.getElementsByClassName('clip')[0].src = listVideo[e]
         }
     </script>
 </body>

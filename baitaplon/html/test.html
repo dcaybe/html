@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Màu nền mờ cho Header</title>
+    <title>Biến nút thành video</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+        .overlay {
+            /* position: relative; */
+            width: 300px;
+            height: 200px;
         }
-        .header {
-            background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .overlay img {
+            width: 100%;
+            height: 100%;
         }
-        .content {
-            padding: 20px;
-        }
+        /* .overlay button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        } */
     </style>
 </head>
 <body>
-    <header class="header">
-        Đây là phần header
-    </header>
-    <div class="content">
-        <p>Nội dung của trang</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <!-- Thêm nhiều nội dung để dễ thấy hiệu ứng nền mờ -->
+    <div class="overlay">
+        <img src="your-image-url.jpg" alt="Overlay Image">
+        <button id="myButton" onclick="changeToVideo()">Nhấn vào để xem video</button>
     </div>
+
+    <script>
+        function changeToVideo() {
+            document.getElementById('myButton').outerHTML = `
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2V38ghWHlQ?si=743mgSuViZqeoQ6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        }
+      
+    </script>
 </body>
 </html>

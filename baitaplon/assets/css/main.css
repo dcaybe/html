@@ -122,29 +122,66 @@
 }
 
 .conten_1{
- height: 1080px;
+ height: 753px;
  background-color: #0b04cf;
- padding: 104px 84px 10px 84px;
+ padding: 104px 80px 100px 80px;
+
 }
 
 .slogan h1{
    font-size: 50px;
-    margin: 0 0 84px 0;
+    margin: 0 0 80px 0;
     
 }
 
 .mainct_1{
     height: 640px;
     background-color: #0b04cf;
+    display: flex;
 }
 
 .left_mainct_1{
+    width: 692.943px;
+    height: 621.023px;
+    background-color: yellow;
+    margin-right: 24px;
+}
+
+.right_mainct_1{
+    width: 692.943px;
+    height: 621.023px;
+    background-color: red;
+}
+
+.conten_2{
+    height: 1072px;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 100px 80px 0px 80px;
+}
+
+.main_ct_2{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+
+.poster_left{
+    width: 579px;
+    height: 263px;
+    background-color: #000;
+
 
 }
 
-.left_mainct_1{
+.poster_right{
+    width: 579px;
+    height: 263px;
+    background-color: #000;
+    padding-left: 20px;
 
 }
+
 .footer{
 
 }

@@ -14,7 +14,7 @@ top: 0px;
 right:0px;
 left:0px;
 padding: 10px 40px;
-background-color: transparent;
+/* background-color: transparent; */
 background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -43,7 +43,7 @@ display: flex;
 
 .right_nav{
     text-align: end;
-    width: 200px;
+    width: 240px;
    
     height: 30px;
     position: fixed;
@@ -52,6 +52,14 @@ display: flex;
   
     
 }
+
+
+button{
+    color: #fff;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .right_nav div{
     margin-right: 20px;
 }
@@ -59,10 +67,12 @@ display: flex;
     font-size: 25px;
 }
 
-.right_nav a{
+.right_nav a{ 
     text-decoration: none;
     display: flex;
   
+    justify-content: center;
+    align-items: center;
 }
 
 .right_nav a i{
@@ -78,8 +88,13 @@ display: flex;
 .slider {
     width: 100%;
 
-}
+   
 
+}
+.slider button{
+    width: 100%;
+    height: 100px;
+}
 .img{
     width: 100%;
     height: 500px;
