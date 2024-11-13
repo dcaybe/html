@@ -5,7 +5,7 @@
     right:0px;
     left:0px;
     height: 80px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -118,7 +118,6 @@
 .content{
  background-color: #000;
  color: #fff;
- height: 1400px;
 }
 
 .conten_1{
@@ -128,7 +127,7 @@
 
 }
 
-.slogan h1{
+.slogan span{
    font-size: 50px;
     margin: 0 0 80px 0;
     
@@ -153,35 +152,47 @@
     background-color: red;
 }
 
+
 .conten_2{
     height: 1072px;
-    width: 100%;
     background-color: aquamarine;
     padding: 100px 80px 0px 80px;
 }
 
 .main_ct_2{
-    display: flex;
+    /* display: flex; */
     text-align: center;
     justify-items: center;
 }
 
 .poster_left{
-    width: 579px;
+    width: 646.4px;
     height: 263px;
     background-color: #000;
+    margin-bottom: 50px;
 
 
 }
 
 .poster_right{
-    width: 579px;
+    width: 646.4px;
     height: 263px;
     background-color: #000;
     padding-left: 20px;
-
+    margin-bottom: 50px;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.content_3{
+    height: 1072px;
+    background-color: aquamarine;
+    padding: 100px 80px 0px 80px;
+}
 .footer{
 
 }
