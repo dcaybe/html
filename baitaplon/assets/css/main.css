@@ -1,13 +1,33 @@
 .header{
-    
+    display: flex;
     position: fixed;
     top: 0px;
     right:0px;
     left:0px;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    background-color:transparent;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
 
+}
+.left_nav{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding-left: 36px;
+    
+
+}
+.fa-solid.fa-caret-down{
+    color: #fff;
+}
+.riot_game_icon{
+    width: 100px;
+    height: 28px;
+}
+.riot_game_icon_1{
+    width: 35px;
+    height: 32px;
+}
 
 .nav{
     /* font-size:14px; */
@@ -26,15 +46,15 @@
 .nav li{
   
   position: relative;
+
  
 }
-.right_nav li a,
-.right_nav li ,
+/* .right_nav li a,
+.right_nav li , */
 .nav li a{
     padding: 7.5px 16px;
     text-align: center;
     margin-right: 4px;
-    /* font-size: 14px; */
     line-height: 30px;
     display: inline-block;
     text-decoration:none;
@@ -58,7 +78,7 @@
     position: absolute;
     left: 0px;
     padding: 0px;
-    width: 160px;
+    width: 180px;
     background-color: #111;
     padding-bottom: 16px;
     padding-left: 16px;
@@ -70,7 +90,7 @@
 .nav .subnav li{
     left: 0px;
     padding: 0px;
-    width: 160px;
+    width: 180px;
     background-color: #111;
     margin-top: 16px;
 }
@@ -90,15 +110,91 @@
     display:flex ;
     
 }
+ 
+.riot_btn{
+    height: 46px;
+    background-color: transparent;
+     border:none;
+     padding: 0 0 0 0;
+}
 
 .right_nav{
     display: inline-block;
-   position: fixed;
+    position: fixed;
     right: 0;
+    height: 45px;
+    padding: 4px 40px;
+    margin: 0px;
+    margin-top: 4px;
+
 }
+
+.right_nav_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+.right_nav_main li{
+    /* line-height: 45px; */
+    }
+.right_nav a{
+    padding: 12px 22px;
+    background: #d1363a;
+    border-radius: 1.6rem ;
+    color: #000;
+}
+
+.search_btn{
+    border: 1px solid white;
+    width: 156px;
+    height: 30px;
+    border-radius: 1.6rem;
+    padding: 0.8px 22px;
+    margin-right: 6px;
+}
+
+.ti-search:before {
+    margin-right: 3px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.search_container{
+    width: 140px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_search{
+    background-color: transparent;  /* không màu */
+    border-top-style: hidden;   /*ẩn viền input */
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: 0; /* ẩn viền ô chữ*/
+    color: #fff;
+    font-size: 18px;
+    max-width: 120px;
+    padding-left: 24px;
+    margin-right: 14px;
+}
+input::placeholder { 
+    color:#e7e6e3; 
+ }
 
 .right_nav li{
     display: inline-block;
+}
+
+.language{
+    margin-right: 20px;
+    color: #fff;
 }
 
 
@@ -152,9 +248,11 @@
     background-color: red;
 }
 
-
+.conten_5,
+.conten_4,
+.conten_3,
 .conten_2{
-    height: 1072px;
+    /* height: 1072px; */
     background-color: aquamarine;
     padding: 100px 80px 0px 80px;
 }
@@ -188,12 +286,42 @@
     justify-items: center;
 }
 
-.content_3{
+.main_ct_5{
+    width: 100%;
+    display: flex;
+    
+}
+.ct_5{
+    height: 170px;
+    width: 416px;
+    background-color: #0dac25;
+    margin: auto;
+}
+/* .conten_3{
     height: 1072px;
     background-color: aquamarine;
     padding: 100px 80px 0px 80px;
+} */
+
+.bottom_conten_5{
+    height: 40px;
+    background-color: #3b077a;
 }
 .footer{
+    height: 216px;
+    padding: 0 20px 20px 20px;
+}
+
+.main{
+    height: 73px;
+    background-color: #b60df4;
+    padding: 30px 0;
+}
+
+.credit{
+    height: 20px;
+    background-color: #0ee3e7;
+    padding: 30px 0;
 
 }
 

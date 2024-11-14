@@ -3,41 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biến nút thành video</title>
-    <style>
-        .overlay {
-            /* position: relative; */
-            width: 300px;
-            height: 200px;
-        }
-        .overlay img {
-            width: 100%;
-            height: 100%;
-        }
-        /* .overlay button {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-        } */
+    <title>Đổi màu Header khi cuộn trang</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+    
+    header {
+        background-color: lightblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+    }
+    
+    .content {
+        margin-top: 80px; /* Để tránh header cố định chồng lên nội dung */
+        height: 2000px; /* Đặt chiều cao để tạo thanh cuộn */
+    }
     </style>
+    <script>window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        var scrollPosition = window.scrollY; // Lấy vị trí cuộn dọc hiện tại
+    
+        if (scrollPosition > 100) { // Đổi màu khi cuộn xuống 100px
+            header.style.backgroundColor = 'blue';
+        console.log('helllo ')
+
+        } else {
+            header.style.backgroundColor = 'lightblue';
+        }
+    });
+    </script>
 </head>
 <body>
-    <div class="overlay">
-        <img src="your-image-url.jpg" alt="Overlay Image">
-        <button id="myButton" onclick="changeToVideo()">Nhấn vào để xem video</button>
+    <header id="header">
+        Đây là phần header
+    </header>
+    <div class="content">
+        <!-- Nội dung dài để tạo thanh cuộn -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...</p>
+        <!-- Thêm nhiều nội dung -->
     </div>
-
-    <script>
-        function changeToVideo() {
-            document.getElementById('myButton').outerHTML = `
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/C2V38ghWHlQ?si=743mgSuViZqeoQ6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-        }
-      
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>

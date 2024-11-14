@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="..\JS\home.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <div class="header">
+        <div class="left_nav"><button class="riot_btn"><img class="riot_game_icon" src="..\assets\img\002_RG_2021_FULL_LOCKUP_OFFWHITE.png" >
+        <i class="fa-solid fa-caret-down"></i></button></div>
+        <div class="left_nav"><button class="riot_btn"><img class="riot_game_icon_1" src="..\assets\img\001.2_RG_2021_LOGOMARK_BLACK_OFFWHITE_CONTAINER.png" ></button></div>
         <!-- start_nav -->
        <ul class="nav">
-        <li><a href="">RIOT GAME</a></li>
+       
+        <li></li>
         <li><a href="">
             CHÚNG TÔI LÀ AI
-            <i class="ti-angle-down"></i>
+            <i class="fa-solid fa-caret-down"></i>
         </a>
             <ul class="subnav">
                 <div class="under_line"></div>
@@ -27,7 +33,7 @@
         </li>
         <li><a href="">
             LÀM VIỆC CÙNG CHÚNG TÔI
-            <i class="ti-angle-down"></i>
+            <i class="fa-solid fa-caret-down"></i>
         </a>
             <ul class="subnav">
                 <div class="under_line"></div>
@@ -39,11 +45,15 @@
         <li><a href="">TIN TỨC</a> </li>
        </ul>
        <!-- end_nav -->
-       <ul class="right_nav">
+       <div class="right_nav"><ul class="right_nav_main">
         <li><i class="language ti-world"></i></li>
-        <li><i class="search ti-search"></i></li>
+        <li class="search_btn">
+           <div class="search_container"> <input class="input_search" type="text" placeholder="Kết quả" size="12"> 
+            <i class="search ti-search">
+            </i></div>
+           </li>
         <li><a href="">ĐĂNG NHẬP</a></li>
-       </ul>
+       </ul></div>
     </div>
    
     <div class="slider">
@@ -87,12 +97,71 @@
         </div>
         <div class="conten_3">
             <div class="main_ct_3">
-                <div class="slogan"><span>Trò chơi của chúng tôi</span></div>
+                <div class="slogan"><span>Esports</span></div>
+                <div class="row">
+                    <div class="poster_left">
+                   
+                    </div>
+                    <div class="poster_right">
+    
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="conten_4"></div>
-        <div class="conten_5"></div>
+        <div class="conten_4"><div class="slogan"><span>GiảI trí</span></div>
+        <div class="row">
+            <div class="poster_left">
+           
+            </div>
+            <div class="poster_right">
+
+            </div>
+        </div></div>
+        <div class="conten_5"><div class="slogan"><span>Riot Forge</span></div>
+        <div class="row">
+            <!-- <div class="poster_left">
+           
+            </div>
+            <div class="poster_right">
+
+            </div> -->
+            <div class="main_ct_5">
+                <div class="ct_5"></div>
+                <div class="ct_5"></div>
+                <div class="ct_5"></div>
+            </div>
+        </div>
+        <div class="bottom_conten_5">
+            
+        </div>
     </div>
-    <div class="footer"></div>
+    </div>
+    <div class="footer">
+        <div class="main_footer">
+            <div class="main"></div>
+            <div class="credit"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+    var header = document.getElementsByClassName('content_1');
+    var scrollPosition = window.scrollY; // Lấy vị trí cuộn dọc hiện tại
+
+    if (scrollPosition > 100) { // Đổi màu khi cuộn xuống 100px
+        document.getElementsByClassName("header")[0].style = "background-color: black ; "
+
+        document.getElementsByClassName("search_btn")[0].style = "  border: 1px solid #2b2a29; background-color: #2b2a29 "
+        
+        // document.getElementsByClassName("input_search")[0].style = " color: rgba(186, 137, 100, 0.2) "
+
+    } else {
+        document.getElementsByClassName("header")[0].style = "background-color: transparent ; "
+
+        document.getElementsByClassName("search_btn")[0].style = "      border: 1px solid white; background-color: transparent"    
+    }
+});
+
+   
+    </script>
 </body>
 </html>
