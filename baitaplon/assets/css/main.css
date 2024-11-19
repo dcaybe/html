@@ -14,11 +14,20 @@ h3{
     margin: 0px;
 }
 
+.svg_icon svg{
+    width: 25px;
+    height: 19.44px;
+
+}
+
 .svg_icon{
+    background-color: #000;
     width: 32px;
     height: 32px;
- 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .svg_document{
@@ -234,6 +243,7 @@ input::placeholder {
 }
 
 .conten_1{
+ background-image: url(https://www.riotgames.com/assets/img/arc2/4fc41b662c875cf1d00e2aa786a2cb76/whatshappening-min.png);
  height: 820px;
  background-color: #0b04cf;
  padding: 104px 80px 100px 80px;
@@ -242,6 +252,10 @@ input::placeholder {
 .poster_left_ct_1{
     height: 390px;
     background-color: #fff;
+}
+.poster_left_ct_1 img{
+    width: 727.275px;
+   height: 390px;
 }
 .slogan span{
    font-size: 50px;
@@ -254,24 +268,25 @@ input::placeholder {
 
 .mainct_1{
     height: 640px;
-    background-color: #0b04cf;
+    background-color: transparent;
     display: flex;
 }
 
 .left_ct_1{
     width: 1000px;
     height: 621.023px;
-    background-color: yellow;
+    background-color: transparent;
     margin-right: 24px;
     font-size: 1.938rem
 }
 .end_left_ct_1{
+    margin-top: 16px;
     display: flex;
 }
 .right_ct_1{
     width: 692.943px;
     height: 621.023px;
-    background-color: red;
+    background-color: transparent;
 }
 
 .list_right_mainct_1{
@@ -282,6 +297,51 @@ input::placeholder {
     height: 158px;
     background-color: #0270df;
     margin-bottom: 20px;
+}
+
+.right_mainct_1{
+    display: flex;
+    border-radius: 8px;
+}
+
+.right_mainct_1_L{
+    width: 252.525px;
+    height: 126px;
+    background-color: #F9F9F9;
+    padding: 1rem .5rem 1rem 1.625rem;
+}
+
+.right_mainct_1_R{
+    width: 275px;
+    height: 158px;
+    background-color: #121aa5;
+    
+}
+
+.right_mainct_1_R img{
+    width:275px;
+    height:158px;
+    border-radius: 8px;
+}
+
+.right_mainct_1_L_top{
+    height: 54px;
+    background-color: #000;
+}
+
+.right_mainct_1_L_top p {
+    height:54px ;
+    font-size: 23px;
+    margin: 0px;
+}
+
+.right_mainct_1_L_bot{
+    height:32px ;
+    background-color: #07e59b;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .conten_5,
@@ -358,7 +418,10 @@ input::placeholder {
     height: 20px;
     background-color: #0ee3e7;
     padding: 30px 0;
+    display: flex; justify-content: space-between; 
 
 }
+
+
 
 
