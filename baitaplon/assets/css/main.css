@@ -8,10 +8,15 @@
     height: 80px;
     background-color:transparent;
     transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+   z-index: 10;
 
 }
+
+
+
 h3{
-    margin: 0px;
+
+    margin: 16px 0 0 0 ;
 }
 
 .svg_icon svg{
@@ -28,6 +33,7 @@ h3{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .svg_document{
@@ -100,6 +106,7 @@ h3{
 }
 
 .nav .subnav {
+    z-index: 11;
     display: none;
     position: absolute;
     left: 0px;
@@ -115,7 +122,7 @@ h3{
 
 .nav .subnav li{
     left: 0px;
-    padding: 0px;
+    padding: 0px;   
     width: 180px;
     background-color: #111;
     margin-top: 16px;
@@ -244,19 +251,30 @@ input::placeholder {
 
 .conten_1{
  background-image: url(https://www.riotgames.com/assets/img/arc2/4fc41b662c875cf1d00e2aa786a2cb76/whatshappening-min.png);
+ background-size: cover;
  height: 820px;
- background-color: #0b04cf;
  padding: 104px 80px 100px 80px;
 
 }
+
 .poster_left_ct_1{
     height: 390px;
     background-color: #fff;
+    overflow: hidden;
 }
 .poster_left_ct_1 img{
     width: 727.275px;
    height: 390px;
+   transition: height 0.45s, width 0.45s,transform 0.3s ease-in-out ;
+
 }
+
+.poster_left_ct_1 img:hover{
+    height: 400px;
+    width:735px;
+    transform: scale(1.095);
+}
+
 .slogan span{
    font-size: 50px;
     margin: 0 0 80px 0;
@@ -273,7 +291,7 @@ input::placeholder {
 }
 
 .left_ct_1{
-    width: 1000px;
+    width: 727.275px;
     height: 621.023px;
     background-color: transparent;
     margin-right: 24px;
@@ -282,6 +300,7 @@ input::placeholder {
 .end_left_ct_1{
     margin-top: 16px;
     display: flex;
+    align-items: center;
 }
 .right_ct_1{
     width: 692.943px;
@@ -295,7 +314,7 @@ input::placeholder {
 
 .right_mainct_1{
     height: 158px;
-    background-color: #0270df;
+    background-color: #1c2640;
     margin-bottom: 20px;
 }
 
@@ -307,14 +326,16 @@ input::placeholder {
 .right_mainct_1_L{
     width: 252.525px;
     height: 126px;
-    background-color: #F9F9F9;
+    background-color:#1c2640;
+    border-radius: 8px;
     padding: 1rem .5rem 1rem 1.625rem;
 }
 
 .right_mainct_1_R{
     width: 275px;
     height: 158px;
-    background-color: #121aa5;
+    background-color: #1c2640;
+    border-radius: 8px;
     
 }
 
@@ -326,7 +347,7 @@ input::placeholder {
 
 .right_mainct_1_L_top{
     height: 54px;
-    background-color: #000;
+    background-color: #1c2640;
 }
 
 .right_mainct_1_L_top p {
@@ -337,7 +358,7 @@ input::placeholder {
 
 .right_mainct_1_L_bot{
     height:32px ;
-    background-color: #07e59b;
+    background-color: #1c2640;
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -349,33 +370,82 @@ input::placeholder {
 .conten_3,
 .conten_2{
     /* height: 1072px; */
-    background-color: aquamarine;
+    
     padding: 100px 80px 0px 80px;
+    background-image: url(https://www.riotgames.com/assets/img/arc2/c60afea567606edccee5e5923447d4d4/products-min.png);
 }
 
 .main_ct_2{
-    /* display: flex; */
     text-align: center;
     justify-items: center;
 }
-
+.poster_right:hover,
+.poster_left:hover{
+    border: 2px solid white;
+}
 .poster_left{
     width: 646.4px;
-    height: 263px;
-    background-color: #000;
+    height: 300px;
     margin-bottom: 50px;
-
+    position: relative;
+    background-size: cover;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid black;
 
 }
+
+.poster_left >div{
+    height: 252px;
+    width: 136px;
+    background-color: transparent;
+    position: absolute;
+    left:42px;
+    top:24px
+    
+}
+
+.poster_right>div{
+    height: 252px;
+    width: 136px;
+    background-color: transparent;
+    position: absolute;
+    left:42px;
+    top:24px
+    
+}
+
+.poster_left_list_icon{
+    background-color: #2c344a;
+    border-radius: 10px;
+    width: 50px;
+    margin: 0 43px;
+}
+.poster_right div img,
+.poster_left div img{
+    width: 136px;
+    height: 57px;
+    margin: 65px 0;
+}
+
 
 .poster_right{
     width: 646.4px;
-    height: 263px;
+    height: 300px;
     background-color: #000;
-    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
     margin-bottom: 50px;
+    background-size: cover;
+    border-radius: 8px;
+    border: 2px solid black;
+
 }
 
+.poster_img{
+    width: 646.4px;
+    height: 300px;
+}
 .row{
     display: flex;
     align-items: center;
