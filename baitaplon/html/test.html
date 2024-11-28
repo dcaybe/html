@@ -3,53 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide Left Effect</title>
+    <title>Trang web đọc tin tức</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .container {
-            background-color: #000;
-            position: relative;
-            width: 300px;
-            height: 200px;
-            /* overflow: hidden; */
-        }
+        /* styles.css */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-        .content {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+.article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
 
-        .item {
-            min-width: 300px;
-            height: 200px;
-            background-color: blue;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+#loadMore {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#loadMore:hover {
+    background-color: #0056b3;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content" id="content">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
-        </div>
-    </div>
-    <button onclick="slideLeft()">Slide Left</button>
-
-    <div>
-        <img src="https://www.riotgames.com/darkroom/350/944f95c8e0fa2833ae6ef7467caaecf3:4dd689552335aef269a590edf17c6814/cyw-kickback-294.JPG" alt="">
+        <div class="article">Bài viết 1</div>
+        <div class="article">Bài viết 2</div>
+        <div class="article">Bài viết 3</div>
+        <button id="loadMore">Xem Thêm</button>
     </div>
     <script>
-        let currentIndex = 0;
+        // script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreButton = document.getElementById('loadMore');
+    let currentArticleCount = 3;
 
-        function slideLeft() {
-            const content = document.getElementById('content');
-            currentIndex = (currentIndex + 1) % 3;
-            content.style.transform = `translateX(-${currentIndex * 300}px)`;
+    loadMoreButton.addEventListener('click', () => {
+        // Số lượng bài viết mới muốn tải thêm
+        const newArticles = [
+            'Bài viết 4',
+            'Bài viết 5',
+            'Bài viết 6',
+            'Bài viết 7',
+            'Bài viết 8'
+        ];
+
+        const container = document.querySelector('.container');
+        
+        // Tạo các thẻ div mới cho các bài viết mới
+        newArticles.forEach(articleContent => {
+            const articleDiv = document.createElement('div');
+            articleDiv.className = 'article';
+            articleDiv.textContent = articleContent;
+            container.insertBefore(articleDiv, loadMoreButton);
+        });
+
+        currentArticleCount += newArticles.length;
+
+        // Ẩn nút "Xem Thêm" khi đã tải đủ bài viết
+        if (currentArticleCount >= 8) {
+            loadMoreButton.style.display = 'none';
         }
+    });
+});
+
     </script>
 </body>
 </html>
