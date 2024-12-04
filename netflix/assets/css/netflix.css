@@ -3,11 +3,11 @@ html {
     background-color: #000;
 }
 
-img {
-    max-width: 100%;
-    object-fit: cover;
-    /* lấy trung tâm ảnh */
-}
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        /* lấy trung tâm ảnh */
+    }
 
 .header {
     height: 60px;

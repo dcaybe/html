@@ -7,6 +7,7 @@ button {
 body{
     background-color: #252423;
 }
+
 .header{
     padding:  5px 0;
     display: flex;
@@ -66,7 +67,7 @@ h3{
     height: 28px;
 }
 .riot_game_icon_1{
-    width: 35px;
+    width: 82px;
     height: 32px;
 }
 
@@ -185,11 +186,19 @@ a{
     /* line-height: 45px; */
     }
 .right_nav a{
+    margin-right: 10px;
     padding: 12px 22px;
-    background: #d1363a;
-    border-radius: 1.6rem ;
-    color: #000;
+    background: #282828;
+    border-radius: 12px;
+    color: #fff;
    cursor: pointer;  /* thay doi con tro  */
+}
+
+.play--now_btn{
+    background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%) !important;
+    border-radius: 18px !important;
+    color: #000 !important;
+
 }
 
 .search_btn{
@@ -241,31 +250,154 @@ input::placeholder {
     color: #fff;
 }
 
-body{
-   
-}
 
 
     
 .slider{
-    height: 1000px;
+    height: 908px;
     width: 100%;
     margin-top: 0px;
-    background-image: url(https://www.riotgames.com/assets/img/content/e99be4b4cd0b958b04fa3adceb5ce5ee/explore-hero-bg--large.jpg);
+    position: relative;
+   
     
 }
-.img{
-    height: 650px;
-    width: 1472.8.800px;
+.bgc_slider{
+  
+   
+    background: linear-gradient(transparent 28%, #e4e0da, #e4e0da);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 44%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    /* z-index: 1; */
 }
+img {
+    max-width: 100%;
+    object-fit: cover;
+    /* lấy trung tâm ảnh */
+}
+.slider__layout_child{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 678px;
+}
+
+.slider__layout_child_top{
+    width: 100%;
+    height: 50px;
+ 
+    text-align: center;
+    margin-bottom: 15px ;
+}
+.slider__layout_child_bottom{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+}
+.btn--playnow_slider{
+    height: 40px;
+    width: 150px;
+   
+    font-size: 20px;
+    background-color: #edbb5c;
+}
+
 
 .content{
- background-color: #000;
+    background-image: url(https://playruneterra.com/assets/261df28b4865e24a1c279d88735f4ad129557adf/static/image/general/background-home.jpg);
  color: #fff;
 }
+/* content_1 */
+.content_1{
+    height:560px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: end;
+    position: relative;
+  
+}
+.left_content_1{
+    position: absolute;
+    height: 450px;
+    width: 840px;
+    background-color: #33a14f;
+    top: -60px;
+    left: 20px;
+}
+.right_content_1{
+    height: 300px;
+    width: 40%;
+    background-color: #191616;
+    padding-top: 100px;
+}
 
+.right_main_content_1{
+    width: 330px;
+    height: 100%;
+    margin: auto;
+}
 
+/* content_2 */
+.content_2{
+    height:390px;
+    width: 100%;
+    background-color: #ca1212;
+    display: flex;
+    justify-content: center;
+  
+}
 
+.list_item_main_content_2  {
+    display: flex;
+    margin: auto;
+  }
+
+.item_main_content_2 img{
+   height : 390px;
+    width: 280px;
+    margin: 0 12px;
+}
+.content_3{
+    height:846px;
+    width: 100%;
+    background-color: #0b9f44;
+    
+    justify-content: center;
+  
+}
+
+.title_content_3{
+    text-align: center;
+    height: 40px;
+    width: 1473px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main_content_3{
+    height: 600px;
+    width: 1230px;
+    margin: auto;
+    background-color: #670ed4;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.class_hero{
+    height: 158px;
+    width: 158px;
+    background-color: #d30f0f;
+    transform: rotate(45deg);
+}
+.describe_hero{
+    
+}
 .footer{
     height: 216px;
     padding: 0 20px 20px 20px;
